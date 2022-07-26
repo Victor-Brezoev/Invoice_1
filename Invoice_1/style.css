@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --main-font-family: 'Roboto';
+    --main-color:goldenrod;
+    --secondary-color: #f9ffed;
+    --main-font-size: 17px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 60px auto;
+}
+
+body{
+    font-size: var(--main-font-size);
+    line-height: 1.2;
+    background: #fff;
+    font-family: var(--main-font-family);
+    }
+
+    .company{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    span{
+        font-size: 67px;
+        font-weight: bolder;
+        letter-spacing: 4px;
+    }
+
+    .company-info{
+        align-self: center;
+    }
+
+    .company-partner{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 180px;
+    }
+    
+    .document-data{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        text-align: end;
+    }
+
+    div{                                 
+        padding: 5px;
+    }
+
+    .title{
+        color: var(--main-color);
+        font-weight: bolder;
+    }
+
+    .hr-1{
+        background: var(--main-color);
+        height: 5px;
+        margin-top: 75px;
+        opacity: 0.5;
+    }
+
+    th{
+        color: var(--main-color);
+    }
+
+    .document-details{
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    .document-details td:nth-child(n+4),
+    .document-details th:nth-child(n+4){
+        text-align: end;
+        padding-right: 25px;;
+    }
+
+    .document-details tr:nth-child(even){
+        background-color: var(--secondary-color);
+    }
+
+    .r {
+        text-align: end;
+    }
+
+    .l {
+        text-align: start;
+    }
+
+    .document-details th{
+        padding-bottom: 35px;
+        padding-top: 15px;
+    }
+
+    .document-details td{
+        padding: 25px;
+        border-bottom: 1px solid var(--main-color);
+    }
+
+.description{ 
+    width: 400px;   
+    padding-left:25px ;
+}
+
+.document-summary {
+    width: 100%;
+    margin-top: 100px;
+    border-collapse: collapse;
+}
+
+.document-summary th,
+.document-summary td{
+    padding: 25px;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.payments-details{
+    margin: 90px auto 40px;
+    background: var(--secondary-color)
+}
+
+ul {
+    padding-bottom: 35px;
+    padding-left: 10px;
+}
+li {
+    padding-bottom: 20px;
+}
+
+.document-footer {
+    text-align: end;
+    margin-top: 70px;
+    border-top: 1px solid goldenrod;
+}
